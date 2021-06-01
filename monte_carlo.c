@@ -14,7 +14,7 @@ float mc_pi(int n)
   if (d<=1)
   c++; 
   }
-  return 4.0*c/(float)n;
+  return 4.0*(c/(float)n);
 }
 
 float frandom() {
