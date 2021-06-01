@@ -5,16 +5,16 @@
 
 float mc_pi(int n)
 {
-  int c=0;
+  float c=0.0;
   for(int i=0;i<n;i++)
   {
   float x= frandom();
   float y=frandom();
-  float d=sqrt(x*x + y*y);
+  float d=sqrt((x*x) + (y*y));
   if (d<=1)
   c++; 
   }
-  return (float)4*c/n;
+  return 4.0*c/(float)n;
 }
 
 float frandom() {
